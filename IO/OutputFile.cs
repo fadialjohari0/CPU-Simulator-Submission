@@ -4,7 +4,7 @@ namespace CPU
     {
         public void WriteOutputFile(List<Task> tasks, ref int clockCycle)
         {
-            string filePath = Path.Combine("CPU-Simulator", "IO", "OutputData.txt");
+            string filePath = Path.Combine("IO", "OutputData.txt");
             using (StreamWriter writetext = new StreamWriter(filePath))
             {
                 writetext.WriteLine("\n---------------------------OUTPUT DATA---------------------------\n");
